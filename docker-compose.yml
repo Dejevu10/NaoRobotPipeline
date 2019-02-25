@@ -1,0 +1,9 @@
+version: '3'
+services:
+  testdeployment:
+    build: .
+    image: webapp:test
+    ports:
+      - "8080:8080"
+    environment:
+      - "ENV:LOCAL"
