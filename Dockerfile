@@ -5,5 +5,3 @@ RUN mkdir webapp
 COPY ./ ./
 
 RUN mvn clean install
-
-RUN mvn test -Dtest=TestingDeploymentApplicationTests.java
