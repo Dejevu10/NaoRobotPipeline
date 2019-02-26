@@ -1,16 +1,16 @@
 version: '3'
 services:
   naorobot_dev:
-    build: .
-    dockerfile: prod_docker
+    build: 
+      dockerfile: ./prod_docker
     image: devrobot:test
     ports:
       - "1180:8080"
     environment:
       - "ENV:PROD"
   naorobot_test:
-    build: .
-    dockerfile: test_docker
+    build: 
+      dockerfile: ./test_docker
     image: testrobot:test
     ports:
       - "8011:8080"
