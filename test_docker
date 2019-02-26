@@ -4,4 +4,4 @@ RUN mkdir webapp
 
 COPY ./ ./
 
-RUN mvn test
+RUN mvn clean install \ mvn test
