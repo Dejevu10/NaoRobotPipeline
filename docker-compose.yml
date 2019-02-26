@@ -1,8 +1,8 @@
 version: '3'
 services:
-  testdeployment:
+  naorobot:
     build: .
-    image: webapp:test
+    image: thesisrobot:test
     ports:
       - "1180:8080"
     environment:
